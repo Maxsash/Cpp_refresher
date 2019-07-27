@@ -42,5 +42,16 @@ int main()
   cout << fmax(50000,69) <<endl; //compare to get larger number
   cout << fmin(420, 50000) <<endl;
 
+  //User Input
+  int age;
+  cout << "Please enter your age: ";
+  cin >> age;
+  cout << "You are " << age << " years old" <<endl;
+  string name;
+  cout << "Please enter you name: ";
+  cin.ignore(); //https://stackoverflow.com/a/6649914 --Please go through
+  getline (cin, name); //it is suggested to only ever use getline instead of cin
+  cout << "Hey there " << name << " !" <<endl;
+
   return 0;
 }
