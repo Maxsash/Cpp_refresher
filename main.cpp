@@ -24,5 +24,13 @@ int main()
   cout << "There once was a man named " << character_name << endl;
   cout << "He was " <<character_age << " years old." << endl;
 
+  //using functions
+  cout << character_name.length() <<"\n"; //Here length is a function
+  cout << character_name.find("hn",0) <<endl ; //another function, now with parameters
+  //the first parameter is the string to find, Second is which index to start looking from
+  cout << character_name.substr(1,2) <<endl;
+  //This is used to make a sub string. First parameter is starting index
+  //second parameter is the desired length of string.
+
   return 0;
 }
