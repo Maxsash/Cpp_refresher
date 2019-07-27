@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath> //for math functions
 
 using namespace std;
 
@@ -31,6 +32,15 @@ int main()
   cout << character_name.substr(1,2) <<endl;
   //This is used to make a sub string. First parameter is starting index
   //second parameter is the desired length of string.
+
+  //NEW math fucntions from cmath
+  cout << pow(2,5) <<endl;
+  cout << sqrt(49.8) <<endl;
+  cout << round(4.6) <<endl;
+  cout << ceil(4.1) <<endl; //ceiling function
+  cout << floor(4.9) <<endl;
+  cout << fmax(50000,69) <<endl; //compare to get larger number
+  cout << fmin(420, 50000) <<endl;
 
   return 0;
 }
